@@ -1,6 +1,11 @@
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 
+
 SHOW DATABASES;
+USE alx_book_store;
+
+DROP TABLE IF EXISTS `Authors`,`Books`,`Customers`,`Orders`,`Order_Details`;
+
 
 
 CREATE TABLE Books(
@@ -40,4 +45,6 @@ CREATE TABLE Order_Details(
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 )
+
+
 
