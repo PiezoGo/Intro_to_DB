@@ -5,6 +5,7 @@ try:
         host = 'localhost',
         user = 'spic3s',
         password = 'StrongPassword123!'
+        # I know what you are looking for!! You are an idiot (youareanidiot.exe)
     )
 
     cursor = mydb.cursor()
